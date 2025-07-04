@@ -5,7 +5,8 @@ import 'services/api_service.dart';
 import 'viewmodel/auth/auth_bloc.dart';
 import 'views/login_screen.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(MyApp());
 }
 

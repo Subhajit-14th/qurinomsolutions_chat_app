@@ -181,8 +181,14 @@ class _ChatDetailScreenState extends State<ChatDetailScreen> {
                       ),
                       child: TextField(
                         controller: _messageController,
+                        style: TextStyle(
+                          color: AppColor.appTextColor,
+                        ),
                         decoration: const InputDecoration(
                             hintText: "Type a message...",
+                            hintStyle: TextStyle(
+                              color: AppColor.appTextColor,
+                            ),
                             border: InputBorder.none,
                             fillColor: AppColor.componantColor1DPElevation,
                             contentPadding: EdgeInsets.only(left: 6)),
